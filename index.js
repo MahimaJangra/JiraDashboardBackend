@@ -20,8 +20,8 @@ app.use(express.json());
 app.post('/login', async (req, res) => {
     try {
         const {email, token}= req.body;
-        console.log("email--",email);
-        console.log("token--",token);
+        // console.log("email--",email);
+        // console.log("token--",token);
         const url= email.split("@")[0];
         console.log(url)
         const response = await axios.get(`https://${url}.atlassian.net/rest/api/3/project`, {
