@@ -12,7 +12,7 @@ app.use(cors(
     // credentials: true
     // },
     {
-        origin: 'https://jira-dashboard-frontend-kappa.vercel.app/',
+        origin: 'https://jira-dashboard-frontend-kappa.vercel.app',
         credentials: true
     }));
 app.use(express.json());
