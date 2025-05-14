@@ -51,7 +51,7 @@ app.post('/:projectKey/issues',async(req, res)=>{
         const {projectKey}= req.params;
         const {email, token}= req.body;
         console.log("server project Key received-", {projectKey})
-        const response= await axios.get(`https://mahimajangra19.atlassian.net/rest/api/3/search?jql=project=${projectKey}`,{
+        const response= await axios.get(`https://${url}.atlassian.net/rest/api/3/search?jql=project=${projectKey}`,{
             auth: {
                 username: email,
                 password: token
